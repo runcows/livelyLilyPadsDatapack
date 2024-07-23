@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "use_pad": {
+      "trigger": "player_interacted_with_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction"
+        }
+      }
+    }
+  },
+    "rewards": {
+        "function": "rc_lilypads:interact_lily_pad"
+    }
+  }

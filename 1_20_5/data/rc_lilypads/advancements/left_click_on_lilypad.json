@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "hit_pad": {
+      "trigger": "player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:interaction"
+        }
+      }
+    }
+  },
+    "rewards": {
+        "function": "rc_lilypads:break_lily_pad"
+    }
+  }

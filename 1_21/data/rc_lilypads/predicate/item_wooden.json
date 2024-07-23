@@ -1,0 +1,29 @@
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt":"{Item:{id:\"minecraft:torch\"}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt":"{Item:{id:\"minecraft:redstone_torch\"}}"
+      }
+    },
+    {
+      "condition": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "type": "minecraft:item",
+        "nbt":"{Item:{id:\"minecraft:soul_torch\"}}"
+      }
+    }
+  ]
+}
