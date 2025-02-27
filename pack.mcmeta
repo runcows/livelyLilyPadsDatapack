@@ -2,7 +2,7 @@
   "pack":{
       "pack_format": 18,
       "supported_formats":[18,48],
-      "description": "Lively Lily Pads v2.2 by Runcows"
+      "description": "Lively Lily Pads v2.3 by Runcows"
   },
   "overlays":{
     "entries":[
@@ -16,7 +16,7 @@
       },
       {
         "directory":"1_21",
-        "formats":48
+        "formats":[48,61]
       }
     ]
   }
