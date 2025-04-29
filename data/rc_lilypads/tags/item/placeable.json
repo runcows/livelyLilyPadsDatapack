@@ -6,6 +6,7 @@
         "minecraft:lantern",
         "minecraft:soul_lantern",
         "#rc_lilypads:coral_fans",
-        "minecraft:spore_blossom"
+        "minecraft:spore_blossom",
+        "minecraft:cactus_flower"
     ]
 }
