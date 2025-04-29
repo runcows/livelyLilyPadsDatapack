@@ -20,6 +20,7 @@ execute unless score item_removed lily_pad_range matches 1 as @e[type=minecraft:
 execute unless score item_removed lily_pad_range matches 1 as @e[type=minecraft:item,predicate=rc_lilypads:item_wet_grass,tag=lilyPadItem,limit=1,sort=nearest] run scoreboard players set sound lily_pad_range 4
 execute unless score item_removed lily_pad_range matches 1 as @e[type=minecraft:item,predicate=rc_lilypads:item_stone,tag=lilyPadItem,limit=1,sort=nearest] run scoreboard players set sound lily_pad_range 5
 execute unless score item_removed lily_pad_range matches 1 as @e[type=minecraft:item,predicate=rc_lilypads:item_spore,tag=lilyPadItem,limit=1,sort=nearest] run scoreboard players set sound lily_pad_range 6
+execute unless score item_removed lily_pad_range matches 1 as @e[type=minecraft:item,predicate=rc_lilypads:item_cactus_flower,tag=lilyPadItem,limit=1,sort=nearest] run scoreboard players set sound lily_pad_range 7
     # set position and fine tune teleport
 execute unless score item_removed lily_pad_range matches 1 run data modify entity @e[tag=lilyPadItem,limit=1,sort=nearest] Pos set from storage rc_lilypads:item item[0].Pos
 execute unless score item_removed lily_pad_range matches 1 as @e[tag=lilyPadItem] at @s run tp @s ~.5 ~ ~.5
@@ -31,6 +32,7 @@ execute unless score item_removed lily_pad_range matches 1 if score sound lily_p
 execute unless score item_removed lily_pad_range matches 1 if score sound lily_pad_range matches 4 as @e[tag=lilyPadItem,limit=1,sort=nearest] at @s run playsound minecraft:block.wet_grass.break block @a[distance=..10] ~ ~.1 ~
 execute unless score item_removed lily_pad_range matches 1 if score sound lily_pad_range matches 5 as @e[tag=lilyPadItem,limit=1,sort=nearest] at @s run playsound minecraft:block.stone.break block @a[distance=..10] ~ ~.1 ~
 execute unless score item_removed lily_pad_range matches 1 if score sound lily_pad_range matches 6 as @e[tag=lilyPadItem,limit=1,sort=nearest] at @s run playsound minecraft:block.spore_blossom.break block @a[distance=..10] ~ ~.1 ~
+execute unless score item_removed lily_pad_range matches 1 if score sound lily_pad_range matches 7 as @e[tag=lilyPadItem,limit=1,sort=nearest] at @s run playsound minecraft:block.cactus_flower.break block @a[distance=..10] ~ ~.1 ~
     # remove tag
 execute unless score item_removed lily_pad_range matches 1 as @e[tag=lilyPadItem] run tag @s remove lilyPadItem
 
